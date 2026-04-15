@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = 'yourdockerhubusername/online-donation-system'
+        DOCKER_IMAGE = 'tamilselvandocker2023/online-donation-system'
         // Add your Docker Hub credentials snippet to Jenkins and provide the ID below
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }

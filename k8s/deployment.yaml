@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: donation-system
-        image: yourdockerhubusername/online-donation-system:latest
+        image: tamilselvandocker2023/online-donation-system:latest
         ports:
         - containerPort: 8080
