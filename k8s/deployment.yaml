@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: donation-system-deployment
+  labels:
+    app: donation-system
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: donation-system
+  template:
+    metadata:
+      labels:
+        app: donation-system
+    spec:
+      containers:
+      - name: donation-system
+        image: yourdockerhubusername/online-donation-system:latest
+        ports:
+        - containerPort: 8080
